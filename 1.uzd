@@ -1,1 +1,4 @@
-
+import txt
+file_name=input("Ievadi datnes nosaukumu:")
+try:
+    with open (txt, "r") as file:
