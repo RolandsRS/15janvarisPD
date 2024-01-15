@@ -1,0 +1,11 @@
+vards=input("Ievadi savu vārdu: ")
+
+faila_nosaukums="rudens.txt"
+
+try:
+    with open (faila_nosaukums, 'w', encoding='utf8'):
+    print(f"Vārds{vards} ir ierakstīts failā {faila_nosaukums}.")
+
+except IOError:
+    print(f"Kļūda, nevarēja ierakstīt failā {faila_nosaukums}.")
+with open ('zem.txt', 'r', encoding='utf8') as datne:
